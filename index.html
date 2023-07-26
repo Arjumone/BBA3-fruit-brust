@@ -36,13 +36,39 @@
 </head>
 <body class="font-lato">
     <header class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 mb-20 ">
-        <nav class="navbar bg-white md:bg-yellow-600 lg:bg-[#F85559] md:rounded-3xl lg:rounded-full px-2 md:px-8 mb-8 lg:h-[120px]">
+      <div class="navbar rounded-full bg-[#f85559] mb-7 h-[100%] md:h-[100%] lg:[120px]">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content lg: mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-center gap-4">
+          <img class="w-10 h-10" src="./images/logo.png" alt="">
+          <h1 class="text-lg font-bold text-white">Fruit Burst</h1>
+        </div>
+        <!-- navbar last -->
+        <div class="navbar-end hidden md:hidden lg:block px-14 py-1">
+          <button class="btn border rounded-full flex gap-3">
+            <p class="text-xs font-normal">Search Here</p>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          </button>
+        </div>
+      </div>
+        <!-- <nav class="navbar  bg-red-600 md:bg-[#f85559] lg:bg-[#F85559] md:rounded-3xl lg:rounded-full px-2 md:px-8 mb-8 g:h-[120px] h-auto md:h-auto">
             <div class="navbar-start">
               <div class="dropdown">
                 <label tabindex="0" class="btn btn-ghost btn-circle md:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                   </label>
-                <ul tabindex="0" class="menu md:flex-row gap-7 text-white hidden md:flex font-medium text-xs">
+                <ul tabindex="0" class="menu menu-sm sm:dropdown-content mt-3   md:flex-row gap-7 text-black md:text-white lg:text-white hidden md:flex font-medium text-xs">
                   <li><a>Home</a></li>
                   <li><a>About Us</a></li>
                   <li><a>Shop</a></li>
@@ -54,14 +80,14 @@
               <img src="./images/logo.png" alt="">
               <h1 class="text-lg font-bold text-white">Fruit Burst</h1>
             </div>
-            <div class="navbar-end my-8 hidden md:flex">
+            <div class="navbar-end my-8 hidden md:hidden">
               <button class="btn gap-16 rounded-full"> Search here
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                 </div>
               </button>
             </div>
-        </nav>
+        </nav> -->
         <!-- banner section/carousel -->
         <section class="relative h-auto">
           <div class="carousel">
@@ -393,7 +419,7 @@
                   <h1 class="text-xl lg:text-5xl font-extrabold mb-6">Meet the team section</h1>               
                   <p class="text-sm font-medium px-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
               </div>
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:px-32 lg:py-28 gap-10">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-32 py-28 gap-10">
                 <!-- member one -->
                 <div class="space-y-2 lg:space-y-4">
                     <img class="md:w-36 md:h-36" src="./images/member1.png" alt=""> 
