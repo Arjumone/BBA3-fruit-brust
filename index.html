@@ -36,13 +36,14 @@
 </head>
 <body class="font-lato">
     <header class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 mb-20 ">
-      <div class="navbar rounded-full bg-[#f85559] mb-7 h-[100%] md:h-[100%] lg:[120px]">
+      <div class="navbar rounded-full bg-[#f85559] px-6 mb-7 h-[100%] md:h-[100%] lg:[120px]">
+        <!-- navbar start -->
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost btn-circle">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
             </label>
-            <ul tabindex="0" class="menu menu-sm dropdown-content lg: mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <ul tabindex="0" class="menu menu-sm dropdown-content lg:flex mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
               <li><a>Home</a></li>
               <li><a>About Us</a></li>
               <li><a>Shop</a></li>
@@ -50,14 +51,15 @@
             </ul>
           </div>
         </div>
+        <!-- navbar center -->
         <div class="navbar-center gap-4">
           <img class="w-10 h-10" src="./images/logo.png" alt="">
           <h1 class="text-lg font-bold text-white">Fruit Burst</h1>
         </div>
         <!-- navbar last -->
-        <div class="navbar-end hidden md:hidden lg:block px-14 py-1">
-          <button class="btn border rounded-full flex gap-3">
-            <p class="text-xs font-normal">Search Here</p>
+        <div class="navbar-end ml-52 hidden md:hidden lg:block px-14 py-1">
+          <button class="btn border btn-wide rounded-full flex">
+            <p class="text-xs font-normal pr-10">Search Here</p>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
           </button>
         </div>
